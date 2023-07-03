@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+  
+<!-- Mirrored from town.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jul 2023 15:49:17 GMT -->
+<head>
+    <meta charset="UTF-8">
+    <title>the end of town (scroll down)</title>
+    <style type="text/css">
+      
+      
+      
+      .cloud1 {
+  z-index: 10;
+  top:0px;
+  left:0;
+  height:100%;
+  width:100%;
+  background:url('clouda.png') 0 0;
+  -webkit-animation: moving-images 8800s ease infinite;
+     -moz-animation: moving-images 8800s ease infinite;
+       -o-animation: moving-images 8800s ease infinite;
+          animation: moving-images 8800s ease infinite;
+}
+
+@keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-999px;}
+  100% {left:0;}
+}
+@-moz-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:19999px;}
+  100% {left:0;}
+}
+@-webkit-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:19999px;}
+  100% {left:0;}
+}
+@-o-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:19999px;}
+  100% {left:0;}
+}
+
+    .cloud2 {
+  z-index: 20;
+  top:0px;
+  right:0;
+  height:100%;
+  width:100%;
+  background:url('cloudb.png') 80% 0;
+  -webkit-animation: moving-images 4000s ease infinite;
+     -moz-animation: moving-images 4000s ease infinite;
+       -o-animation: moving-images 4000s ease infinite;
+          animation: moving-images 4000s ease infinite;
+}
+
+@keyframes moving-images {
+  0%   {right:0;}
+  50%  {right:-9999px;}
+  100% {right:0;}
+}
+@-moz-keyframes moving-images {
+  0%   {right:0;}
+  50%  {right:-9999px;}
+  100% {right:0;}
+}
+@-webkit-keyframes moving-images {
+  0%   {right:0;}
+  50%  {right:-9999px;}
+  100% {right:0;}
+}
+@-o-keyframes moving-images {
+  0%   {right:0;}
+  50%  {right:-9999px;}
+  100% {right:0;}
+}
+
+    .cloud3 {
+  z-index: 30;
+  top:0px;
+  right:0;
+  height:100%;
+  width:100%;
+  background:url('cloudc.png') 40% 0;
+  -webkit-animation: moving-images 6000s ease infinite;
+     -moz-animation: moving-images 6000s ease infinite;
+       -o-animation: moving-images 6000s ease infinite;
+          animation: moving-images 6000s ease infinite;
+}
+
+@keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-19999px;}
+  100% {left:0;}
+}
+@-moz-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-19999px;}
+  100% {left:0;}
+}
+@-webkit-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-19999px;}
+  100% {left:0;}
+}
+@-o-keyframes moving-images {
+  0%   {left:0;}
+  50%  {left:-19999px;}
+  100% {left:0;}
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+}
+
+/* hide horizontal scrollbars, since we use the vertical ones to scroll to the right */
+body
+{
+  overflow-x: hidden;
+  background-color: #000000; 
+}
+
+
+
+
+
+
+/**
+  * important: keep position fixed, you can however use top:0 instead of bottom:0
+  * if you want to make it stick to the top of the browser
+  */
+.scroll
+{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+/**
+  * z-index ordering of the different layers, do this for your layers,
+  * also assign absolute width (to prevent issues if the script gets executed before the images get loaded)
+  */
+  .back
+{
+  background-image: url("starrybg.png");
+  z-index: 1;
+  position: fixed;
+  background-repeat: repeat-x;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+  .ar
+{
+  z-index: 10;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.sea
+{
+  z-index: 200;
+  width: 1500px;
+}
+
+.horizon
+{
+  z-index: 300;
+  width: 2308px;
+}
+
+.trees
+{
+  z-index: 400;
+  width: 3000px;
+}
+
+.backbush
+{
+  z-index: 430;
+  width: 4100px;
+}
+
+.house
+{
+  z-index: 450;
+  width: 4500px;
+}
+
+.grass
+{
+  z-index: 500;
+  width: 6000px;
+}
+
+.middle
+{
+  z-index: 500;
+  width: 6800px;
+}
+
+.front
+{
+  z-index: 1000;
+  width: 8000px;
+
+}
+
+.light
+{
+  z-index: 1460;
+  width: 4500px;
+}  
+.brush2
+{
+  z-index: 1500;
+  width: 6800px;
+
+}
+
+.post
+{
+  z-index: 1600;
+  width: 8000px;
+
+}
+
+.moths
+{
+  z-index: 1700;
+  width: 8000px;
+
+}
+
+.frontbrush
+{
+  z-index: 2000;
+  width: 10000px;
+
+}
+    </style>
+  </head>
+  <body>
+  
+      <div class="back">
+        
+    </div>
+
+ <div class="cloud1 scroll"></div>  <div class="cloud2 scroll"></div>  <div class="cloud3 scroll"></div>
+     <div class="sea scroll">
+        <img src="sea.gif" alt="" />
+    </div>
+    <div class="horizon scroll">
+        <img src="cliffs.png" alt="" />
+    </div>
+        <div class="trees scroll">
+        <img src="trees.png" alt="" />
+        </div>
+    <div class="backbush scroll">
+        <img src="backbush.png" alt="" />
+        </div>
+            <div class="house scroll">
+        <img src="houses.png" alt="" />
+        </div>
+        <div class="grass scroll">
+        <img src="grass.png" alt="" />
+        </div>
+    <div class="middle scroll">
+        <img src="brush.png" alt="" />
+    </div>
+    <div class="front scroll">
+        <img src="streetrocks.png"/>
+    </div>
+        <div class="light scroll">
+        <img src="light.gif"/>
+    </div>
+            <div class="brush2 scroll">
+        <img src="brush2.png" alt="" />
+    </div>
+            <div class="post scroll">
+        <img src="posts.png"/>
+    </div>
+        <div class="moths scroll">
+        <img src="moths.gif"/>
+    </div>
+            <div class="frontbrush scroll">
+        <img src="frontbrush2.png"/>
+    </div>
+    
+    <audio loop controls preload="auto" id="audio" src="https://ifyoulived.org/town.mp4">
+    </audio>
+
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 130000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                //console.log(percent);
+            }
+        });
+    }(jQuery));
+    
+    
+   document.body.addEventListener('click', onceHandler, { once : true });
+   document.body.addEventListener('keypress', onceHandler, { once : true });
+   document.body.addEventListener('touchstart', onceHandler, { once : true });
+
+   function onceHandler(){
+        var audio = document.getElementById("audio");
+        audio.play();
+        console.log(audio)
+      };
+    
+    ///// everest pipkin 2014
+    ///// audio gweniver rhy
+    </script>
+</body>
+
+<!-- Mirrored from town.neocities.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 03 Jul 2023 15:49:21 GMT -->
+</html>
